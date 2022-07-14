@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Simple Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>COVID-19 Survey Form</h1>
+    <p class="description">Please take your time to answer the survey form.</p>
+
+    <form action="" class="survey-form">
+        <div class="form-group">
+            <label class="name-label" name="name">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label class="email-label" name="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label class="age-label" name="age">Age</label>
+            <input type="number" name="age" id="age" placeholder="Age" min="19" max="60" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label class="gender-label" name="gender">Gender</label>
+            <select name="gender" id="gender-dropdown" class="form-control" required>
+                <option value disabled selected>Select your gender</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="vaccine-label" name="vaccine">Are you done with vaccination?</label>
+            <label>
+                <input type="radio" name="vaccine" id="vaccine" value="yes" class="form-radio">Yes
+            </label>
+            <label>
+                <input type="radio" name="vaccine" id="vaccine" value="no" class="form-radio">No
+            </label>
+        </div>
+        <div class="form-group">
+            <label class="state-label" name="state">State</label>
+            <select name="state" id="state-dropdown" class="form-control" required>
+                <option value disabled selected>Select your state</option>
+                <option value="WPKL">Wilayah Persekutuan Kuala Lumpur</option>
+                <option value="Selangor">Selangor</option>
+                <option value="Melaka">Melaka</option>
+                <option value="Negeri Sembilan">Negeri Sembilan</option>
+                <option value="Perak">Perak</option>
+                <option value="Pahang">Pahang</option>
+                <option value="Johor">Johor</option>
+                <option value="Pulau Pinang">Pulau Pinang</option>
+                <option value="Kedah">Kedah</option>
+                <option value="Perlis">Perlis</option>
+                <option value="Kelantan">Kelantan</option>
+                <option value="Terengganu">Terengganu</option>
+                <option value="Sabah">Sabah</option>
+                <option value="Sarawak">Sarawak</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="type-label" name="type">What type of vaccination taken for 3 dose</label><em>i.e. AZ,Pfizer,Sinnovac</em>
+            <p>Dose 1</p>
+            <input type="text" class="form-control" name="type" id="type" placeholder="Dose 1" required>
+            <p>Dose 2</p>
+            <input type="text" class="form-control" name="type" id="type" placeholder="Dose 2" required>
+            <p>Dose 3</p>
+            <input type="text" class="form-control" name="type" id="type" placeholder="Dose 3" required>
+        </div>
+        <div class="form-group">
+            <p>After the vaccination, how is your health condition?</p>
+            <textarea name="comments" id="comments" placeholder="Type your opinion..." class="form-textarea"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
