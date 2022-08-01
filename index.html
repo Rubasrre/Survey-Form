@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>A Simple Survey Form | Codinglifeless</title>
+</head>
+<body>
+    <h1>COVID-19 Survey Form</h1>
+    <p class="description">Please take your time to answer the survey question</p>
+
+    <form class="survey-form">
+        <div class="form-group">
+            <label class="name-label">Name</label>
+            <input type="text" class="form-control" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label class="email-label">Email</label>
+            <input type="email" class="form-control" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label class="age-label">Age</label>
+            <input type="number" class="form-control" placeholder="Select your age" required min="19" max="60">
+        </div>
+        <div class="form-group">
+            <label for="gender" class="gender-label">Gender</label>
+            <select id="gender" class="form-control" required>
+                <option value disabled selected>Select your gender</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="vaccine-label">Are you done with vaccination?</label>
+            <input id="yes" type="radio" value="yes" class="form-radio"><label for="yes">Yes</label>
+            <input id="no" type="radio" value="no" class="form-radio"><label for="no">No</label>
+        </div>
+        <div class="form-group">
+            <label for="state" class="state-label">State</label>
+            <select id="state" class="form-control" required>
+                <option value disabled selected>Select your state</option>
+                <option value="WPKL">Wilayah Persekutuan Kuala Lumpur</option>
+                <option value="Selangor">Selangor</option>
+                <option value="Melaka">Melaka</option>
+                <option value="Negeri Sembilan">Negeri Sembilan</option>
+                <option value="Perak">Perak</option>
+                <option value="Pahang">Pahang</option>
+                <option value="Johor Bahru">Johor Bahru</option>
+                <option value="Pulau Pinang">Pulau Pinang</option>
+                <option value="Kedah">Kedah</option>
+                <option value="Perlis">Perlis</option>
+                <option value="Terengganu">Terengganu</option>
+                <option value="Kelantan">Kelantan</option>
+                <option value="Sabah">Sabah</option>
+                <option value="Sarawak">Sarawak</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="type-label">What type of vaccination taken for 3 dose?</label><em>i.e AZ, Pfizer, Sinnovac</em>
+            <p>Dose 1</p>
+            <input type="text" class="form-control" placeholder="Dose 1" required>
+            <p>Dose 2</p>
+            <input type="text" class="form-control" placeholder="Dose 2" required>
+            <p>Dose 3</p>
+            <input type="text" class="form-control" placeholder="Dose 3" required>
+        </div>
+        <div class="form-group">
+            <p>After the vaccination, how is the health condition?</p>
+            <textarea placeholder="Type your condition..." class="form-textarea"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="submit-button">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
